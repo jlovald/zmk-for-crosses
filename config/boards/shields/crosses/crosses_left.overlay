@@ -42,7 +42,7 @@
     status = "okay";
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&	spi0_sleep>;
+    pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
 
@@ -60,9 +60,8 @@
 
 
 
-
    / {
-    trackball_listener {
+    trackball_other_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
