@@ -61,26 +61,25 @@
 
 
 
-/ {
+   / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
         rel_x {
-			layers = <0>;
-    bindings = <
-        &kp 0x50  // LEFT arrow
-        &kp 0x4F  // RIGHT arrow
-    >;
-};
+            label = "Trackball X";
+            layers = <0>;
+            type = "input-mapper";   // REQUIRED in v0.3
+            positive = <&kp 0x4F>;  // RIGHT arrow
+            negative = <&kp 0x50>;  // LEFT arrow
+        };
 
-rel_y {
-	layers = <0>;
-    bindings = <
-        &kp 0x52  // UP arrow
-        &kp 0x51  // DOWN arrow
-    >;
-};
+        rel_y {
+            label = "Trackball Y";
+            layers = <0>;
+            type = "input-mapper";
+            positive = <&kp 0x51>;  // DOWN arrow
+            negative = <&kp 0x52>;  // UP arrow
+        };
     };
 };
-
