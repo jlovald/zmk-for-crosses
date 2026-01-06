@@ -67,18 +67,18 @@
         device = <&trackball>;
 
         rel_x {
-            bindings = <
-                &kp LEFT  // emit LEFT arrow on negative X movement
-                &kp RIGHT // emit RIGHT arrow on positive X movement
-            >;
-        };
+    bindings = <
+        &kp 0x50  // LEFT arrow
+        &kp 0x4F  // RIGHT arrow
+    >;
+};
 
-        rel_y {
-            bindings = <
-                &kp UP    // emit UP arrow on negative Y movement
-                &kp DOWN  // emit DOWN arrow on positive Y movement
-            >;
-        };
+rel_y {
+    bindings = <
+        &kp 0x52  // UP arrow
+        &kp 0x51  // DOWN arrow
+    >;
+};
     };
 };
 
