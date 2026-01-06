@@ -18,15 +18,15 @@
             bindings = <&mo 5>, <&kp LEFT_WIN>, <&kp LEFT_WIN>;
         };
 
-          mouse_move: mouse_move {
+        mouse_move: mouse_move {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <1>;
             bindings = <&mmv LEFT &mmv RIGHT &mmv UP &mmv DOWN>;
         };
 
         arrow_nav: arrow_nav {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <1>;
             bindings = <&kp LEFT &kp RIGHT &kp UP &kp DOWN>;
         };
     };
