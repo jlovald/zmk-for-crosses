@@ -67,7 +67,6 @@
         device = <&trackball>;
 
         rel_x {
-            label = "Trackball X";
             layers = <0>;
             type = "input-mapper";   // REQUIRED in v0.3
             positive = <&kp 0x4F>;  // RIGHT arrow
@@ -75,7 +74,6 @@
         };
 
         rel_y {
-            label = "Trackball Y";
             layers = <0>;
             type = "input-mapper";
             positive = <&kp 0x51>;  // DOWN arrow
