@@ -43,8 +43,8 @@
         layer_2 {
             bindings = <
 &trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)  &none        &none         &kp F1     &kp F2    &kp F3   &kp F4   &none
-&trans  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)  &none        &kp UP_ARROW  &kp LEFT   &kp HOME  &kp F7   &kp F8   &none
-&trans  &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &none       &none        &kp DOWN      &kp RIGHT  &kp END   &kp F11  &kp F12  &none
+&trans  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)  &none        &kp UP_ARROW  &kp RIGHT  &kp HOME  &kp F7   &kp F8   &none
+&trans  &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &none       &none        &kp DOWN      &kp LEFT   &kp END   &kp F11  &kp F12  &none
 &none   &trans      &none       &none          &none       &kp SPACE
             >;
         };
