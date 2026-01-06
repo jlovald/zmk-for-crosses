@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MODKEYS";
             #binding-cells = <0>;
-            bindings = <&none>, <&mo 5>, <&kp LEFT_WIN>;
+            bindings = <&mo 5>, <&kp LEFT_WIN>, <&kp LEFT_WIN>;
         };
     };
 
