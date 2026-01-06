@@ -67,6 +67,7 @@
         device = <&trackball>;
 
         rel_x {
+			layers = <0>;
     bindings = <
         &kp 0x50  // LEFT arrow
         &kp 0x4F  // RIGHT arrow
@@ -74,6 +75,7 @@
 };
 
 rel_y {
+	layers = <0>;
     bindings = <
         &kp 0x52  // UP arrow
         &kp 0x51  // DOWN arrow
