@@ -17,6 +17,18 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&kp LEFT_WIN>, <&kp LEFT_WIN>;
         };
+
+          mouse_move: mouse_move {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv LEFT &mmv RIGHT &mmv UP &mmv DOWN>;
+        };
+
+        arrow_nav: arrow_nav {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LEFT &kp RIGHT &kp UP &kp DOWN>;
+        };
     };
 
     keymap {
@@ -28,6 +40,11 @@
 &kp LCTRL           &kp A         &kp S        &kp D        &kp F            &kp G          &kp H  &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT      &lt 3 Z       &kp X        &kp C        &kp V            &kp B          &kp N  &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH    &mt RIGHT_ALT ESCAPE
 &tap_dance_modkeys  &kp LEFT_ALT  &lt 4 SPACE  &lt 5 ENTER  &lt 2 BACKSPACE  &lt 1 SPACE
+            >;
+
+            sensor-bindings = <
+                &mouse_move   /* sensor[0] */
+                &arrow_nav    /* sensor[1] */
             >;
         };
 
