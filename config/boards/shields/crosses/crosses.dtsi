@@ -1,6 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <dt-bindings/led/led.h>
-
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include <input/processors/report_rate_limit.dtsi>
+#include <behaviors/rate_limit.dtsi>
 / {
     chosen {
         zmk,kscan = &kscan0;
